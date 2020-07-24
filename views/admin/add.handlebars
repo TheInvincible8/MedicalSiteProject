@@ -1,0 +1,19 @@
+<div class="container" style="margin-top: 180px;">
+    <form action="/dashboard/add" method="post" enctype="multipart/form-data">
+        <input name="name" type="text" class="form-input" placeholder="Enter Name of Product">
+        <input type="file"  name="file" id="file" >
+        <input name="price" type="text" class="form-input" placeholder="Enter Price of Product">
+        <input name="seller" type="text" class="form-input" placeholder="Enter Seller Name">
+        <textarea name="description" class="form-input" id="" cols="30" rows="20"></textarea>
+        <input name="availibility"type="text" class="form-input" placeholder="Enter number of pieces of product">
+        <select name="category" class="btn btn-default" id="">
+            <option value="cold">Cold &amp; Cough</option>
+            <option value="infection">Bacterial infections</option>
+            <option value="fever">Fevers</option>
+        </select>
+
+        <div class="mt-5">
+            <button class="btn btn--primary">Add Product</button>
+        </div>
+    </form>
+</div>

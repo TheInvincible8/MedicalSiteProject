@@ -1,0 +1,27 @@
+  <main style="margin-top: 200px;">
+          <div class="container">
+          <div class="breadcrumb">
+          <span><a href="/">Home</a>/<a href="/products">Products</a>/{{product.name}}</span>
+      </div>
+    </div>
+    <div class="container">
+      
+        <div class="row">
+          <div class="col-md-12">
+              <div class="singleproduct text-center" style="border:1px solid #555;" >
+            <div class="singleproduct--title">{{product.name}}</div>
+            <div class="singleproduct--seller">Seller - <span>{{product.seller}}</span></div>
+            <div class="singleproduct--status">In stock.</div>
+
+            <div class="singleproduct--description">{{product.description}}</div>
+              <div class="mt-5 mb-5">
+                <form action="/products/view/buy/{{product._id}}"></form>
+                  <a href="/products/view/buy/{{product._id}}" class="btn btn--secondary">Buy Now</a>
+              </div>
+              <div class="singleproduct--line">Pay using PayPal to get up to Rs. 250 PayPal Cashback* (FLAT 50%) on your first ever transaction using PayPal. *T&C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
