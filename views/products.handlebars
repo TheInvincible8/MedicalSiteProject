@@ -1,0 +1,77 @@
+  <header class="header__extra">
+
+  </header>
+
+
+  <section class="section__all">
+    
+      <div class="container">
+          <div class="breadcrumb">
+          <span>Home/</span><a href="#">Products</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="sidebar">
+            <div class="sidebar">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+
+          <div class="row">
+              {{#each products}}
+            <div class="col-md-4">
+              <div class="product">
+                <div class="product__img" >
+                    <img src="/uploads/{{image}}" alt="">    
+                    <div class="product__img--extra"><a href="/products/view/{{_id}}"><i class="fas fa-plus"></i></a></div>
+                </div>
+  
+                <div class="product__content">
+                  <a  href="/products/view/{{_id}}" class="product__content--title">{{name}}</a>
+                  <div class="product__content--price">₹ {{price}}</div>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="section-services">
+    <h1 class="text-center title text-white">Our Offered Services</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="far fa-hospital"></i>
+            <h2 class="display-5">Better Services</h2>
+            <h5 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora modi ex obcaecati
+              recusandae omnis eveniet culpa aliquam soluta.</h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="fas fa-briefcase-medical"></i>
+            <h2 class="display-5">Quality Equipment</h2>
+            <h5 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora modi ex obcaecati
+              recusandae omnis eveniet culpa aliquam soluta.</h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="fas fa-stethoscope"></i>
+            <h2 class="display-5">Advance Technology</h2>
+            <h5 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora modi ex obcaecati
+              recusandae omnis eveniet culpa.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

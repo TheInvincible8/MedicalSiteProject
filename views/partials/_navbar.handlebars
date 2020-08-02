@@ -1,0 +1,44 @@
+ <nav class="navbar">
+    <!-- Icon Trigger -->
+    <div class="navbar__trigger ">
+      <div></div>
+    </div>
+    <!--./Icon Trigger  -->
+
+    <!-- Brand/logo -->
+    <div class="navbar-logo">
+      <a href="#"><i class="fab fa-medrt"></i> Med</a>
+    </div>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="/">Home</a>
+      </li>
+      <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="#">Categories</a>
+      </li>
+      <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="/products">Products</a>
+      </li>
+
+      {{#if user}}
+        <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="/users/profile"><i class="fas fa-user"></i> Profile</a>
+      </li>
+      <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="/users/logout">Logout</a>
+      </li>
+
+      {{else}}
+      <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="/users/login">Login</a>
+      </li>
+      <li class="navbar-nav--item">
+        <a class="navbar-nav--link" href="/users/register">Register</a>
+      </li>
+      {{/if}}
+
+    </ul>
+
+  </nav>

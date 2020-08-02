@@ -1,0 +1,28 @@
+<div class="title text-center mt">Profile</div>
+<div class="container">
+    <form action="/users/profile" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-input" name="username" value="{{user.username}}" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input"  name="email" value="{{user.email}}"  placeholder="Enter Your Email">
+                </div>
+
+                <h3 class="mb-3 mt-3">Personal Information for Delevery</h3>
+                <div class="form-group">
+                    <label for="address">Adress:</label>
+                    <textarea name="address" id="address" cols="30" rows="10" style="width: 100%"> {{user.address}} </textarea>
+                </div>
+
+                  <label for="address">State:</label>
+                <input type="text" name="state" class="form-input"  value="{{user.state}}" placeholder="State">
+                      <label for="address">City:</label>
+                <input type="text" name="city" class="form-input" value="{{user.city}}"  placeholder="City">
+                      <label for="address">PinCode:</label>
+                <input type="text" name="pincode" class="form-input" value="{{user.pincode}}"  placeholder="PinCode">
+                
+                {{!-- <div class="form-group mt-90">
+                    <input type="submit" value="Update" class="btn btn-block btn-primary">
+                </div> --}}
+            </form>
+</div>
